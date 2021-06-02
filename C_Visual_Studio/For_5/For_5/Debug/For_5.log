@@ -1,0 +1,3 @@
+﻿  exercise_for.c
+C:\Users\LDH\Desktop\C_programming\For_5\For_5\exercise_for.c(22,2): warning C4098: 'main': 'void' 함수에서 값을 반환하고 있습니다.
+  For_5.vcxproj -> C:\Users\LDH\Desktop\C_programming\For_5\Debug\For_5.exe
