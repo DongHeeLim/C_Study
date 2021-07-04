@@ -16,6 +16,7 @@ int main(){
     memset(ptr, 0, sizeof(struct Point2D));
 
     printf("%d %d %d %d\n", p.x, p.y, ptr->x, ptr->y);
+
     free(ptr);
     return 0;
 }
