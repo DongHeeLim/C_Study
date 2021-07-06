@@ -12,17 +12,17 @@ int main(){
     struct Point2D p[4];
     double length = 0.0f;
 
-    p[0].x = 10;
-    p[0].y = 10;
-    p[1].x = 20;
-    p[1].y = 20;
-    p[2].x = 30;
-    p[2].y = 30;
-    p[3].x = 40;
-    p[3].y = 40;
+    // p[0].x = 10;
+    // p[0].y = 10;
+    // p[1].x = 20;
+    // p[1].y = 20;
+    // p[2].x = 30;
+    // p[2].y = 30;
+    // p[3].x = 40;
+    // p[3].y = 40;
 
 
-    // scanf("%d %d %d %d %d %d %d %d", &p[0].x, &p[0].y, &p[1].x, &p[1].y, &p[2].x, &p[2].y, &p[3].x, &p[3].y);
+    scanf("%d %d %d %d %d %d %d %d", &p[0].x, &p[0].y, &p[1].x, &p[1].y, &p[2].x, &p[2].y, &p[3].x, &p[3].y);
     // printf("%d\n", (sizeof(p)/sizeof(struct Point2D)-1));
     // printf("%lf\n", pow(pow(p[1].x-p[0].x,2), 0.5));
     // printf("%lf\n", pow(pow(p[1].x - p[0].x, 2) + pow(p[1].y - p[0].y ,2) , 0.5));
