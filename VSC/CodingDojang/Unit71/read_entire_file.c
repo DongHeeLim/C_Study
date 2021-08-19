@@ -12,7 +12,7 @@ int main()
     FILE *fp = fopen("..\\Unit70\\hello.txt", "r");
 
     fseek(fp, 0, SEEK_END);
-    size = ftell(fp);   // 파일포인터 현재 위치 = 파일크기
+    size = ftell(fp);   // 파일포인터 현재(끝) 위치 = 파일크기
 
     // 파일 문자열 -> C언어 문자열
     buffer = malloc(size + 1);  // +1  -> 문자열 마지막 NULL

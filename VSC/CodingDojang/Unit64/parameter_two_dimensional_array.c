@@ -23,6 +23,7 @@ int main()
     printf("%d\n", sizeof(numArr[0]));  //20
     printf("%d\n", sizeof(int));        //4
 
+    printf("크기 : %d\n", sizeof(numArr[0][1]));
 
     int col = sizeof(numArr[0])/sizeof(int);    // 5 
     int row = sizeof(numArr)/sizeof(numArr[0]); // 2
