@@ -1,0 +1,3 @@
+﻿  main.c
+C:\Users\LDH\Desktop\C\C_Study\C_Visual_Studio\Recursion_01\Recursion_01\main.c(62,6): warning C4101: 'n' :참조되지 않은 지역 변수입니다.
+  Recursion_01.vcxproj -> C:\Users\LDH\Desktop\C\C_Study\C_Visual_Studio\Recursion_01\Debug\Recursion_01.exe
