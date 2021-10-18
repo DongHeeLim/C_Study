@@ -6,6 +6,6 @@ enum type {
 	DOUBLE
 };
 
-char e[][10] = { "dog", "pig", "tiger", "hourse" };
-char h[][10] = { "°³", "µÅÁö", "È£¶ûÀÌ", "¸»"};
-int elen = sizeof(e) / sizeof(e[0]);
+extern char e[][10] = { "dog", "pig", "tiger", "hourse" };
+extern char h[][10] = { "°³", "µÅÁö", "È£¶ûÀÌ", "¸»"};
+extern int elength = sizeof(e) / sizeof(e[0]);

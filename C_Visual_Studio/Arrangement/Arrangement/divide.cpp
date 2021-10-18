@@ -9,6 +9,7 @@ void divideAlpa()
 	char word[50];
 	int len = sizeof(word) / sizeof(char);
 	//char* word = (char *)malloc(sizeof(char) * 50);
+	printf("영단어를 입력하세요 :");
 	scanf_s("%s", word, len);
 	int lenWord = strlen(word);
 	int alpacntlen = sizeof(alpacnt) / sizeof(int);
