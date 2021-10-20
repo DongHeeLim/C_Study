@@ -61,9 +61,9 @@ void printArray(int array[], int n) {
 
 void bubbleSort(int array[], int n)
 {
-	for (int i = 0; i < n-1; i++)
+	for (int i = 0; i < n-1; i++)	// 버블 횟수
 	{
-		for (int j = 0; j < n-1-i; j++)
+		for (int j = 0; j < n-1-i; j++)		// 바꿀 위치들
 		{
 			if (array[j] > array[j+1])	// 오름차순
 			{
@@ -76,22 +76,44 @@ void bubbleSort(int array[], int n)
 void newbubbleSort(int array[], int n)
 {
 	int flag;
-	//int count = 0;
+	int count = 0;
 
-	for (int i = 0; i < n - 1; i++)
+	for (int i = 0; i < n - 1; i++)	// 버블 횟수
 	{
 		flag = 0;
 
-		for (int j = 0; j < n - 1 - i; j++)
+		for (int j = 0; j < n - 1 - i; j++)		// 바꿀 위치 범위(큰 것 뒤로 보내고 앞에 것끼리), if문 없어도 돌긴 함
 		{
-			if (array[j] > array[j + 1])	// 바꿀게 있으면 계속 바꿈
+			if (array[j] > array[j + 1])	// 바꿀게 있으면 계속 바꿈 (오름 차순, 큰 것을 뒤쪽으로)
 			{
 				swapNumber(&array[j], &array[j + 1]);
 				flag = 1;
-				//count++;
+				count++;
 			}
 		}
-		if (flag == 0) break;	// 이미 다 바꿔서 끝나면 됨
+		if (flag == 0) break;	// 남은 것들끼리 이미 다 바꿔서 끝나면 됨(for문 탈출)
 	}
-	//printf("%d\n", count);
+	printf("%d\n", count);
+}
+
+//int a[5] = { 70, 30, 15, 20, 10 };
+void insertSort(int array[], int len)
+{
+	int i, j, key;
+	for (i = 1; i < len; i++)
+	{
+		key = array[i];
+		printf("%d\n", key);
+		for (j = i-1; j >= 0; j--)
+		{
+			if (array[j] > key) {
+				array[j + 1] = array[j];
+			}
+			else break;
+			
+		}
+		array[j + 1] = key;
+		
+	}
+
 }
