@@ -31,6 +31,7 @@ void calc(double a, char op, double b) {
 	printf("%.2lf % c %.2lf = %.2lf\n", a, op, b, result);
 }
 
+
 int DoubleNum(int x, int y) {
 
 	if (x % y == 0) {
@@ -43,6 +44,7 @@ int DoubleNum(int x, int y) {
 	} 
 }
 
+
 int sum(int from, int to) {
 	int result = 0;
 
@@ -54,6 +56,7 @@ int sum(int from, int to) {
 	return result;
 }
 
+
 int Factorial(int n) {
 
 	if (n == 1) return 1;
@@ -61,11 +64,13 @@ int Factorial(int n) {
 	return Factorial(n - 1) * n;
 }
 
+
 int Fibo(int n) {
 	if (n < 1) return 0;
 	if (n == 1 || n == 2) return 1;
 	else return Fibo(n - 1) + Fibo(n - 2);
 }
+
 
 int Fibo2(int n) {
 	int i, a = 1, b = 1;
@@ -79,10 +84,12 @@ int Fibo2(int n) {
 	return c;
 }
 
+
 void ShowBit(int decimal) {
-	int binary[4] = {0,};
+	int bin[32] = {0, };
 	int count = 0;
-	while (decimal)
+	int room = 0;
+	while (decimal >= 0)
 	{
 		if (decimal < (1 << count)) {
 			break;
@@ -91,25 +98,51 @@ void ShowBit(int decimal) {
 	}
 
 	printf("count = %d\n", count);
-
-	printf("%d\n", 1<<4);
-	while (decimal != 0) {
-		for (int i = 0; i < 4; i++)
+	// 3 + 최소1자리 = 1room 만들기 위해
+	room = (count+3) / 4 ;	
+	int size = room * 4;
+	printf("room = %d\n", room);
+	printf("size = %d\n", size);
+	
+	while (decimal != 0)
+	{
+		for (int i = 0; i < size; i++)
 		{
-			binary[4-i-1] = decimal % 2;
+			bin[i] = decimal % 2;
 			decimal /= 2;
 		}
 
-		for (int i = 0; i < 4; i++)
+		for (int i = size-1; i >= 0; i--)
 		{
-			printf("%d", binary[i]);
+
+			printf("%d", bin[i]);
+			if ((i) % 4 == 0)
+				printf(" ");
 		}
-		printf(" ");
 	}
 
+	printf("\n");
 }
+
 
 int Check(int x) {
 	
-	return 1;
+	int i;
+
+	for (i = 2; i < x; i++)
+	{
+		if (x % i == 0)
+			break;
+	}
+
+	if (i == x) {
+		printf("소수\n");
+		return 1;
+	}
+	else
+	{
+		printf("소수아님\n");
+		return 0;
+	}
+		
 }

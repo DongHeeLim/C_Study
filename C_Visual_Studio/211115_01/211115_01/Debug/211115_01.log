@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\c_source\C_Study\C_Visual_Studio\211115_01\211115_01\main.cpp(28,6): warning C4101: 'temp' :참조되지 않은 지역 변수입니다.
+  211115_01.vcxproj -> D:\c_source\C_Study\C_Visual_Studio\211115_01\Debug\211115_01.exe
