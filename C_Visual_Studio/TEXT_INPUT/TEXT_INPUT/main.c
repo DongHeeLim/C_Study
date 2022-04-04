@@ -63,7 +63,7 @@ int main(void) {
 
 	printf("=====================================\n");
 
-	node P[] = { {"길동", 8}, {"피닉스", 1}, {"히응", 5} };
+	node P[3] = { {"길동", 8}, {"피닉스", 1}, {"히응", 5} };
 	node H[3];
 	int length = sizeof(H)/sizeof(H[0]);
 	FILE* in;
@@ -71,21 +71,21 @@ int main(void) {
 
 	out = fopen("test1.txt", "w+");	// 쓰기 전용 읽기도 가능
 
-	for (int i = 0; i < 3; i++)
+	printf("test1 : 파일열었음\n");
+
+	for (int i = 0; i < length; i++)
 	{
-		snprintf(P + i, 20, "%s\n", P[i]);
+		printf("P[ %d ] : %s %d\n", i, P[i].objectName, P[i].age);
 	}
 	// 대상, 사이즈, 횟수, 파일
-	fwrite(P, sizeof(node), 1, out);	// \s \n 까지 읽음 바이너리로 저장
-	fwrite(P+1, sizeof(node), 2, out);	// 횟수가 2번이면 2개 읽음
-	
+	fwrite(&P, sizeof(P), 1, out);	// 구조체를 바이너리로 저장
 
 	
 
 	// 파일 포인터, 이동할 크기, 기준점 
 	fseek(out, 0, SEEK_SET); // 파일포인터를 파일의 처음으로 이동
-	fread(H, sizeof(node), 2, out);
-	fread(H + 2, sizeof(node), 1, out);
+	fread(H, sizeof(H), 2, out);	// 바이너리를 읽어 구조체로 가져옴
+
 	
 	for (int i = 0; i < length; i++)
 	{
