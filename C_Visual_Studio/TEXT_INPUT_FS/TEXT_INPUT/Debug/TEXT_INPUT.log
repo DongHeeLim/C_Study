@@ -1,0 +1,6 @@
+﻿  main.c
+D:\Github\C_Study\C_Visual_Studio\TEXT_INPUT\TEXT_INPUT\main.c(46,8): warning C4013: 'memset'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+D:\Github\C_Study\C_Visual_Studio\TEXT_INPUT\TEXT_INPUT\main.c(76,17): warning C4133: '함수': 'node *'과(와) 'char *const ' 사이의 형식이 호환되지 않습니다.
+D:\Github\C_Study\C_Visual_Studio\TEXT_INPUT\TEXT_INPUT\main.c(76,23): warning C4477: 'snprintf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'node'입니다.
+D:\Github\C_Study\C_Visual_Studio\TEXT_INPUT\TEXT_INPUT\main.c(69,8): warning C4101: 'in' :참조되지 않은 지역 변수입니다.
+  TEXT_INPUT.vcxproj -> D:\Github\C_Study\C_Visual_Studio\TEXT_INPUT\Debug\TEXT_INPUT.exe
