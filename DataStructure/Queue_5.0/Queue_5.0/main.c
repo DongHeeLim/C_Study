@@ -8,8 +8,8 @@ int queue[SIZE];
 int front, rear, size;
 
 void init_queue() {
-	front = 0;
-	rear  = SIZE - 1;
+	front = 0;			// dequeue 시작
+	rear  = SIZE - 1;	// 기존의 -1 이 아니라 배열의 가장 마지막 칸을 시작 지점으로 잡음
 	size  = 0;
 }
 
@@ -23,25 +23,25 @@ int is_full() {
 
 void enqueue(int data) {
 	if (is_full()) {
-		printf("가득참\n");
+		printf("가득참\n");		// size == 설정한 배열 크기
 		return;
 	}
-	rear = (rear + 1) % SIZE;
+	rear = (rear + 1) % SIZE;		// 시작할 때 : 5칸 짜리 배열이면 [4]-> [0]
 	queue[rear] = data;
-	size = size + 1;
+	size = size + 1;		// 배열 내부 데이터 개수 + 1
 	printf("front : %d, rear : %d, size: %d\n", front, rear, size);
 }
 
 int dequeue() {
 	int output;
-	if (is_empty()) {
+	if (is_empty()) {			// size == 0
 		printf("비었음\n");
 		return -1;
 	}
 
 	output = queue[front];	// front 0번 방부터
-	front = (front + 1) % SIZE;	// 처음값은 1, 0~4
-	size = size - 1;
+	front = (front + 1) % SIZE;	// 0 번방 내보내고 다음 값은 1, 0~4 범위
+	size = size - 1;		// 배열 내부 데이터 개수 - 1
 	return output;
 }
 
