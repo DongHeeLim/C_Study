@@ -1,0 +1,14 @@
+﻿  main.cpp
+D:\Github\C_Study\C_Visual_Studio\TEST_Cpp\TEST_Cpp\main.cpp(34,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'size_t'입니다.
+D:\Github\C_Study\C_Visual_Studio\TEST_Cpp\TEST_Cpp\main.cpp(34,9): message : 서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+D:\Github\C_Study\C_Visual_Studio\TEST_Cpp\TEST_Cpp\main.cpp(35,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'size_t'입니다.
+D:\Github\C_Study\C_Visual_Studio\TEST_Cpp\TEST_Cpp\main.cpp(35,9): message : 서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+D:\Github\C_Study\C_Visual_Studio\TEST_Cpp\TEST_Cpp\main.cpp(36,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'size_t'입니다.
+D:\Github\C_Study\C_Visual_Studio\TEST_Cpp\TEST_Cpp\main.cpp(36,9): message : 서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+D:\Github\C_Study\C_Visual_Studio\TEST_Cpp\TEST_Cpp\main.cpp(40,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'size_t'입니다.
+D:\Github\C_Study\C_Visual_Studio\TEST_Cpp\TEST_Cpp\main.cpp(40,9): message : 서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+D:\Github\C_Study\C_Visual_Studio\TEST_Cpp\TEST_Cpp\main.cpp(41,9): warning C4477: 'printf' : 서식 문자열 '%x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'test *'입니다.
+D:\Github\C_Study\C_Visual_Studio\TEST_Cpp\TEST_Cpp\main.cpp(41,9): warning C4313: 'printf': 서식 문자열의 '%x'이(가) test *' 형식의 인수 1과(와) 충돌합니다.
+D:\Github\C_Study\C_Visual_Studio\TEST_Cpp\TEST_Cpp\main.cpp(42,9): warning C4477: 'printf' : 서식 문자열 '%x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'unsigned char *'입니다.
+D:\Github\C_Study\C_Visual_Studio\TEST_Cpp\TEST_Cpp\main.cpp(42,9): warning C4313: 'printf': 서식 문자열의 '%x'이(가) unsigned char *' 형식의 인수 1과(와) 충돌합니다.
+  TEST_Cpp.vcxproj -> D:\Github\C_Study\C_Visual_Studio\TEST_Cpp\x64\Debug\TEST_Cpp.exe
